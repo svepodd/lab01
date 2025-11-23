@@ -7,13 +7,12 @@ def main(
 ):
     # New comment from SvePodd
     """
-    Говорит "Привет" пользователю, опционально используя фамилию и формальный стиль.
+    Говорит "Привет" пользователю
     """
     if formal:
         print(f"Добрый день, {name} {lastname}!")
     else:
         print(f"Привет, {name}!")
 
-# Launching the application Typer
 if __name__ == "__main__":
     typer.run(main)
