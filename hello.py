@@ -14,5 +14,6 @@ def main(
     else:
         print(f"Привет, {name}!")
 
+# Launching the application Typer
 if __name__ == "__main__":
     typer.run(main)
