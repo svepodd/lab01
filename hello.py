@@ -5,10 +5,7 @@ def main(
     lastname: str = typer.Option("", help="Фамилия пользователя."),
     formal: bool = typer.Option(False, "--formal", "-f", help="Использовать формальное приветствие."),
 ):
-    # New comment from SvePodd
-    """
-    Говорит "Привет" пользователю
-    """
+
     if formal:
         print(f"Добрый день, {name} {lastname}!")
     else:
