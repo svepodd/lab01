@@ -4,9 +4,11 @@ import os
 def main():
 	v = sys.version_info[0]
 	if v==2:
-		exec('print "Hello appsec world"')
+		name = raw_input("Enter your name: ").strip()
+		exec('print "Hello appsec world from" + name')
 	elif v==3:
-		print("Hello appsec world")
+		name = input("Enter your name: ")
+		print("Hello appsec world from" + name)
 	else:
 		print("Unknown python version")
 
